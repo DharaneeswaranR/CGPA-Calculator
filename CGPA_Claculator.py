@@ -1,4 +1,4 @@
-def calculate_cgpa(grade_point, credits, num):
+def calculate_cgpa(grade_points, credits, num):
     Mark_sum = list()
 
     for i in range(num):
@@ -9,9 +9,9 @@ def calculate_cgpa(grade_point, credits, num):
     return cgpa
 
 if __name__ ==  '__main__': 
-    num = int(input("Enter number of subjects : "))
+    num = int(input("\nEnter number of subjects : "))
 
-    grade_point = list()
+    grade_points = list()
     credits = list()
 
     for i in range(1, num+1):
@@ -19,19 +19,19 @@ if __name__ ==  '__main__':
         credit = int(input("Enter credit of Subject " + str(i) +" : "))
 
         if 90 <= mark <= 100:
-            grade_point.append(10)
+            grade_points.append(10)
         elif 80 <= mark <= 89:
             grade_point.append(9)
         elif 70 <= mark <= 79:
-            grade_point.append(8)
+            grade_points.append(8)
         elif 60 <= mark <= 69:
-            grade_point.append(7)
+            grade_points.append(7)
         elif 50 <= mark <= 59:
-            grade_point.append(6)
+            grade_points.append(6)
         else:
-            grade_point.append(0)
+            grade_points.append(0)
 
         credits.append(credit)
 
-    print("\nCGPA is {:.2f}".format(calculate_cgpa(grade_point, credits, num)))
+    print("\nCGPA is {:.2f}\n".format(calculate_cgpa(grade_point, credits, num)))
     
