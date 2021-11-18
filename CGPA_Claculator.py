@@ -1,10 +1,10 @@
 def calculate_cgpa(grade_points, credits, num):
-    Mark_sum = list()
+    mark_sum = list()
 
     for i in range(num):
-        Mark_sum.append(grade_point[i] * credits[i])
+        mark_sum.append(grade_point[i] * credits[i])
 
-    cgpa = sum(Mark_sum) / sum(credits)
+    cgpa = sum(mark_sum) / sum(credits)
 
     return cgpa
 
