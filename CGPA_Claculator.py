@@ -15,8 +15,8 @@ if __name__ ==  '__main__':
     credits = list()
 
     for i in range(1, num+1):
-        mark = int(input("\nEnter marks of Subject " + str(i) +"  : "))
-        credit = int(input("Enter credit of Subject " + str(i) +" : "))
+        mark = int(input("\nEnter marks of Subject " + str(i) + " : "))
+        credit = int(input("Enter credit of Subject " + str(i) + " : "))
 
         if 90 <= mark <= 100:
             grade_points.append(10)
