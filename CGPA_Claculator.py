@@ -2,7 +2,7 @@ def calculate_cgpa(grade_points, credits, num):
     Mark_sum = list()
 
     for i in range(num):
-        Mark_sum.append(grade_point[i] * credits[i])
+        Mark_sum.append(grade_points[i] * credits[i])
 
     cgpa = sum(Mark_sum) / sum(credits)
 
@@ -21,7 +21,7 @@ if __name__ ==  '__main__':
         if 90 <= mark <= 100:
             grade_points.append(10)
         elif 80 <= mark <= 89:
-            grade_point.append(9)
+            grade_points.append(9)
         elif 70 <= mark <= 79:
             grade_points.append(8)
         elif 60 <= mark <= 69:
@@ -33,5 +33,5 @@ if __name__ ==  '__main__':
 
         credits.append(credit)
 
-    print("\nCGPA is {:.2f}\n".format(calculate_cgpa(grade_point, credits, num)))
+    print("\nCGPA is {:.2f}\n".format(calculate_cgpa(grade_points, credits, num)))
     
